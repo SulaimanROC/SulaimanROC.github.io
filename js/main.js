@@ -7,11 +7,16 @@ const profielKenmerken = {
     Projects: 'Hoger lager, Boter Kaas eieren, web catalogus',
     Study: 'Software Development',
     Abilities: 'Coding, reading and fluent in english',
-    BannerColor: 'black',
+    Banner: 'black',
     SocialMedia: 'Instagram: Sulaiman, Twitter: Sulaiman123'
-}
+};
 
 for (key in profielKenmerken) {
-    console.log(key); //name, occupation, ship
-    console.log(profielKenmerken[key]); // Jean Luc, Captain, USS Enterprise
-}
+    console.log(key);
+    console.log(profielKenmerken[key]);
+};
+
+document.querySelector('.Banner')
+console.log(Banner.innerHTML);
+
+
