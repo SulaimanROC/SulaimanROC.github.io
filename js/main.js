@@ -16,7 +16,21 @@ for (key in profielKenmerken) {
     console.log(profielKenmerken[key]);
 };
 
-document.querySelector('.Banner')
-console.log(Banner.innerHTML);
+
+
+
+fetch("../data/aboutme.json")
+.then(myData => myData.json())
+.then(jsonData => ShowinWebpage(jsonData));
+
+function ShowinWebpage(jsonData) {
+    const name1 = document.querySelector('.name')
+
+    console.log(jsonData);
+    name1.innerText = jsonData.age
+
+
+
+}
 
 
