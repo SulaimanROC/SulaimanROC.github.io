@@ -24,16 +24,41 @@ fetch("../data/aboutme.json")
     .then(jsonData => showinWebpage(jsonData));
 
 function showinWebpage(jsonData) {
-    const name1 = document.querySelector('.name')
-    const SchoolEmail = document.querySelector('.SchoolMail')
-    const PersonalEmail = document.querySelector('.PersonalMail')
-    const PhoneNumber = document.querySelector('.PhoneNumber')
+    // const name1 = document.querySelector('.name')
+    // const SchoolEmail = document.querySelector('.SchoolMail')
+    // const PersonalEmail = document.querySelector('.PersonalMail')
+    // const PhoneNumber = document.querySelector('.PhoneNumber')
 
-    console.log(jsonData);
-    name1.innerText = jsonData.age
-    SchoolEmail.innerText = jsonData.SchoolEmail
-    PersonalEmail.innerText = jsonData.PersonalEmail
-    PhoneNumber.innerHTML = jsonData.PhoneNumber
+
+    const aboutMeElem = document.querySelector('.about-me');
+    aboutMeElem.innerHTML += createTableFromObject(jsonData.info);
+
+    const contactElem = document.querySelector('.contact');
+    contactElem.innerHTML += createTableFromObject(jsonData.contact);
+
+    // console.log(jsonData);
+    // name1.innerText = jsonData.age
+    // SchoolEmail.innerText = jsonData.SchoolEmail
+    // PersonalEmail.innerText = jsonData.PersonalEmail
+    // PhoneNumber.innerHTML = jsonData.PhoneNumber
 }
 
 
+function createTableFromObject(obj) {
+
+    let html = '\
+        <table class="table-responsive">\
+            <tbody>\
+    ';
+    for (key in obj) {
+        html += `                 
+            <tr class="">
+                <td>${key}:</td>
+                <td>${obj[key]}</td>
+            </tr>
+            
+      `;        
+    }
+    html += ' </tbody></table>';
+    return html;
+}

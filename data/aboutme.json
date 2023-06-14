@@ -1,14 +1,20 @@
-{"name": "Sulaiman",
-"age": "17",
-"PersonalEmail": "Sulaimanh013@gmail.com",
-"SchoolEmail": "302417676@student.rocmondriaan.nl",
-"PhoneNumber": "+31 6 20 70 28 83",
-"UserName": "SulaimanROC",
-"BirthDate": "2005 27 september",
-"ProfilePicture": "empty",
-"Biografy": "I live in the Hague and go to ROC mondriaan following the software development study.",
-"Projects": "Hoger lager, Boter Kaas eieren, web catalogus",
-"Study": "Software Development",
-"Abilities": "Coding, reading and fluent in english",
-"Banner": "black",
-"SocialMedia": "Instagram: Sulaiman, Twitter: Sulaiman123"}
+{
+    "info": {
+        "name": "Sulaiman",
+        "age": "17",
+        "UserName": "SulaimanROC",
+        "BirthDate": "2005 27 september",
+        "Biografy": "I live in the Hague and go to ROC mondriaan following the software development study.",
+        "Projects": "Hoger lager, Boter Kaas eieren, web catalogus",
+        "Abilities": "Coding, reading and fluent in english",
+        "Study": "Software Development"
+    },
+    "contact": {
+        "PersonalEmail": "Sulaimanh013@gmail.com",
+        "SchoolEmail": "302417676@student.rocmondriaan.nl",
+        "PhoneNumber": "+31 6 20 70 28 83",
+        "SocialMedia": "Instagram: Sulaiman, Twitter: Sulaiman123"
+    },
+    "ProfilePicture": "empty",
+    "Banner": "black"
+}
